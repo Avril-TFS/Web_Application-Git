@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  </head>
+  <body>
+    <script>
+      // Callback Function Example
+      function greet(){
+        var name ="abc";
+        console.log("first line of greeting function");
+        console.log("Hello world");
+
+        console.log("before calling callback function");
+
+        // Callback functionfunction
+        // executed only after the gree() is executed
+        sayName(name);
+        console.log("after calling call back function");
+      }
+
+      // callback function
+      function sayName(name){
+        console.log("Hello" + " " + name);
+        console.log("In callback function");
+      }
+
+      // calling the function after 2 seconds
+      setTimeout(greet, 2000);
+      </script>
+      </body>
+      </html>
